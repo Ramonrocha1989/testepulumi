@@ -15,14 +15,14 @@ const workerOne = new Resource("worker-samuel", {
   },
 });
 
-const workerTwo = new Resource("worker-ramon", {
+const workerTwo = new Resource("worker-Andre", {
   resource: [
     "taskrouter",
     { workspaces: "WS6e2c9bd0401b0f7d881f38a761d31e39" },
     "workers",
   ],
   attributes: {
-    friendlyName: "ramon",
+    friendlyName: "Andre",
     attributes: JSON.stringify({ languages: ["en"] }),
   },
 });
