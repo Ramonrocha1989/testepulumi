@@ -26,3 +26,15 @@ const workerOne = new Resource('worker-everton', {
       attributes: JSON.stringify({ languages: ['en'] }),
     },
   });
+
+  const workertree = new Resource('worker-ElvisPresley', {
+    resource: [
+      'taskrouter',
+      { workspaces: "WS6e2c9bd0401b0f7d881f38a761d31e39" },
+      'workers',
+    ],
+    attributes: {
+      friendlyName: 'ElvisPresley',
+      attributes: JSON.stringify({ languages: ['en'] }),
+    },
+  });
