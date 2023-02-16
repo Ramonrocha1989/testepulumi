@@ -4,7 +4,7 @@ const pulumi = require("@pulumi/pulumi");
 const { Resource } = require('twilio-pulumi-provider');
 
 
-const TaskqueueEnglish = new Resource('taskqueue-english', {
+const TaskqueueEUA = new Resource('taskqueue-english', {
   resource: [
     'taskrouter',
     { workspaces: "WS6e2c9bd0401b0f7d881f38a761d31e39" },
@@ -16,7 +16,7 @@ const TaskqueueEnglish = new Resource('taskqueue-english', {
   },
 });
 
-const TaskqueueSpanish = new Resource('taskqueue-spanish', {
+const TaskqueueSpani = new Resource('taskqueue-spanish', {
   resource: [
     'taskrouter',
     { workspaces: "WS6e2c9bd0401b0f7d881f38a761d31e39" },
@@ -28,7 +28,7 @@ const TaskqueueSpanish = new Resource('taskqueue-spanish', {
   },
 });
 
-const workerOne = new Resource('worker-one', {
+const worker1 = new Resource('worker-one', {
     resource: [
       'taskrouter',
       { workspaces: "WS6e2c9bd0401b0f7d881f38a761d31e39" },
@@ -40,7 +40,7 @@ const workerOne = new Resource('worker-one', {
     },
   });
   
-  const workerTwo = new Resource('worker-two', {
+  const worker5 = new Resource('worker-two', {
     resource: [
       'taskrouter',
       { workspaces: "WS6e2c9bd0401b0f7d881f38a761d31e39" },
