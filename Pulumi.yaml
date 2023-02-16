@@ -1,0 +1,6 @@
+name: testeProject
+runtime:
+  name: nodejs
+  options:
+    typescript: false
+description: projeto de teste do pulumi
